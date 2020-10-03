@@ -1,12 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
-import Button from './components/Button/button'
+import Button ,{ButtonSize,ButtonType}from './components/Button/button'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button>aaa</Button>
+        <Button btnType={ButtonType.Danger}>aaa</Button>
+        <Button btnType={ButtonType.Primary}>aaa</Button>
+        <Button btnType={ButtonType.Default}>aaa</Button>
+        <Button btnType={ButtonType.Link}>aaa</Button>
+
+        <Button btnType={ButtonType.Link} size={ButtonSize.Large}>aaa</Button>
+        <Button btnType={ButtonType.Link} size={ButtonSize.Small}>aaa</Button>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
