@@ -18,6 +18,14 @@ function App() {
         
         <Menu>
           <MenuItem index={0}>sss</MenuItem>
+          <MenuItem index={1}>aaa</MenuItem>
+          <MenuItem index={2}>bbb</MenuItem>
+        </Menu>
+
+        <Menu mode='vertical'>
+          <MenuItem index={0}>sss</MenuItem>
+          <MenuItem index={1}>aaa</MenuItem>
+          <MenuItem index={2}>bbb</MenuItem>
         </Menu>
         <a
           className="App-link"

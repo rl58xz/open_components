@@ -60,7 +60,7 @@
     }
     &:disabled,
     &.disabled{
-        text-decoration: $btn-link-disabled-decoration;
+        text-decoration: $btn-link-disabled-color;
         pointer-events: none;
     }
 }
