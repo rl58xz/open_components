@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import Button ,{ButtonSize,ButtonType}from './components/Button/button'
+import Button ,{ButtonSize,ButtonType}from './components/Button/button';
+import Menu from './components/Menu/menu';
+import MenuItem from './components/Menu/munuitem';
 
 function App() {
   return (
@@ -14,6 +16,9 @@ function App() {
         <Button btnType={ButtonType.Link} size={ButtonSize.Large}>aaa</Button>
         <Button btnType={ButtonType.Link} size={ButtonSize.Small}>aaa</Button>
         
+        <Menu>
+          <MenuItem index={0}>sss</MenuItem>
+        </Menu>
         <a
           className="App-link"
           href="https://reactjs.org"
