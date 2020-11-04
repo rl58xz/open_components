@@ -18,7 +18,7 @@ const MenuItem: React.FC<MenuItemProps> = (props) => {
     })
 
     const handleClick = () => {
-        if(context.onSelect && !disabled){
+        if(context.onSelect && !disabled && (typeof index === 'number')){
             context.onSelect(index);
         }
     }
@@ -28,5 +28,7 @@ const MenuItem: React.FC<MenuItemProps> = (props) => {
         </li>
     );
 }
+
+MenuItem.displayName = 'MenuItem'
 
 export default MenuItem;
